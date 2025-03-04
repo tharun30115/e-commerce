@@ -23,9 +23,9 @@ const Home = () => {
   //   setLoading(false);
   // }
 
-  useEffect( () => {
-    fetchProductData();
-  }, []);
+  // useEffect( () => {
+  //   fetchProductData();
+  // }, []);
 
   return (
     <div className="flex justify-center items-center h-screen flex-col">
