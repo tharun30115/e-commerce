@@ -7,25 +7,25 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [posts, setPosts] = useState([]);
 
-  // async function fetchProductData(){
-  //   setLoading(true);
+  async function fetchProductData(){
+    setLoading(true);
 
-  //   try{
-  //     const res = await fetch(API_URL);
-  //     const data = await res.json();
+    try{
+      const res = await fetch(API_URL);
+      const data = await res.json();
 
-  //     setPosts(data);
-  //   }
-  //   catch(err){
-  //     alert("Error");
-  //     setPosts([]);
-  //   }
-  //   setLoading(false);
-  // }
+      setPosts(data);
+    }
+    catch(err){
+      alert("Error");
+      setPosts([]);
+    }
+    setLoading(false);
+  }
 
-  // useEffect( () => {
-  //   fetchProductData();
-  // }, []);
+  useEffect( () => {
+    fetchProductData();
+  }, []);
 
   return (
     <div className="flex justify-center items-center h-screen flex-col">
