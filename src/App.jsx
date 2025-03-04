@@ -9,13 +9,14 @@ const App = () => {
     <> 
       <div className="bg-slate-900 fixed w-full z-10">
         <Navbar />
-        <Footer />
       </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+
+
     </>
   );
 };
