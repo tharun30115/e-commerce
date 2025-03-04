@@ -27,7 +27,9 @@ const Cart = () => {
             <div>
               <div className="uppercase text-green-700 font-semibold">Your Cart</div>
               <div className="uppercase text-green-700 font-bold text-4xl">Summary</div>
-        
+              <p className="mt-3 font-bold">
+                <span>Total Item: {cart.length}</span>
+              </p>
             </div>
 
             <div>
